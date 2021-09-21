@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jasmine Sodhi
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.jasminesodhi.com}{\Large Jasmine Sodhi}} & \href{mailto:sodhij@usc.edu}{sodhij@usc.edu \text{\textbar} +1-213-512-9626}\\
+  \href{https://www.linkedin.com/in/jasminesod/}{linkedin.com/jasminesod} & 1239 W 37th Dr, LA, CA 90007 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA}
+      {Master of Science in Computer Science}{Aug. 2021 -- May 2023 (Present)}
+    \resumeSubheading
+      {Indraprastha University}{Delhi, India}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.66}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flipkart}{Bangalore, India}
+      {Software Engineer}{Jul 2018 - Jul 2021 (3 yrs)}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed new features and maintained the merchant onboarding Android application that contributed to 18 percent of the revenue and managed sprints in monthly scheduled rotations}
+        \resumeItem{}
+          {Developed an intuitive map library for declaratively controlling custom features on the map such as markers, polygons and animations along with search and geocoding APIs using Mapbox GL and Mapbox SDKs for Android}
+        \resumeItem{}
+          {Built a UI toolkit called Duplo that acts as a wrapper on most of the cross-platform React Native components and enriches them by adding extra functionality for web and mobile with customizable icons written in TypeScript and based on material design guidelines}
+        \resumeItem{}
+          {Designed and developed the merchant verification (KYC) feature required for regulatory compliance for payment apps using backend driven UI and the Duplo library}
+        \resumeItem{}
+          {Restructured the legacy codebase to MVVM design pattern for modular structure and optimized state management to achieve reduced latency, shorter load time and performance improvements across the app}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Metvy}{Gurgaon, India}
+      {Mobile Application Developer}{Sept 2019 - Feb 2020 (6 mos)}
+      \resumeItemListStart
+        \resumeItem{}
+          {Built the architecture for the Android and iOS app of a hyperlocal networking platform using React Native}
+        \resumeItem{}
+          {Worked on real-time chat and video call capabilities to allow sharing messages and files using QuickBlox APIs}
+        \resumeItem{}
+          {Incorporated multilinguality to improve competency in the native languages by integrated localization scripts}
+        \resumeItem{}
+          {Integrated Amplitute and Firebase analytics SDKs for collecting user behavioral data for user retention and engagement}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zopper}{Noida, India}
+      {Software Development Intern}{Jan 2018 - Jun 2018 (6 mos)}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed the user management APIs for a POS system to update transactional data and maintained the corresponding user interface using Django}
+        \resumeItem{}
+          {Built scripts to aggregate XML test results into an organized format and to load the latest build code onto the POS system for catalog updation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {RobonomicsAI}{Sydney, Australia}
+      {IoT Intern (Remote)}{Jul 2016 - Dec 2016 (6 mos)}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed a chatbot solution that led to an increase in the closure rate of non-critical cases and recovery of a hospital based in Australia by providing insights and instant query resolution to the staff by integrating IBM Watson and Facebook messenger APIs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Ring-O \text{\textbar} Python, Java, Android, BLE }
+      {Developed a hardware device that resembles an ordinary ring but enables gesture controls for IoT devices and payments as well as honors text input by drawing letters in the air}
+    \resumeSubItem{CodeFetch \text{\textbar} JavaScript, Python }
+      {A plugin for Atom text editor that uses web scraping to curate StackOverflow solutions and maintain a keymap to then replace frequent algorithms in the editor using shortcuts}
+    \resumeSubItem{Pollut \text{\textbar} JavaScript, React Native, Android, iOS }
+      {An app that calculates trees to be planted in order to neutralise the carbon footprint emitted by your Uber rides or personal vehicle and redirects donation to CarbonFunds.org}
+    \resumeSubItem{Positio \text{\textbar} Android }
+      {An Android application that tracks and alerts on bad posture based on data from infrared sensors fixed on one's chair}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages }
+      {Python, Javascript, Java, C++, SQL}
+    \resumeSubItem{Technologies/Frameworks }
+      {React Native, Jenkins, GitLab, JIRA, Confluence, Postman, Zeplin}
+  \resumeSubHeadingListEnd
+
+
+%--------LEADERSHIP & ACHIEVEMENTS------------
+\section{Leadership \& Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{IEEE Student Chapter \text{\textbar} President }
+      {Indraprastha University, 2017}
+    \resumeSubItem{MHacks 9 \text{\textbar} Runner Up }
+      {University of Michigan, MI, Mar 2017}
+    \resumeSubItem{Alexa Challenge \text{\textbar} Winner }
+      {Amazon, India, 2017}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
